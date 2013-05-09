@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="ThumbsUp.js" charset="utf-8"></script>
+     <style>
+      @font-face {
+        font-family: 'FontAwesome';
+        src: url('http://fortawesome.github.io/Font-Awesome/assets/font/fontawesome-webfont.eot?v=3.0.1');
+        src: url('http://fortawesome.github.io/Font-Awesome/assets/font/fontawesome-webfont.eot?#iefix&v=3.0.1') format('embedded-opentype'),
+          url('http://fortawesome.github.io/Font-Awesome/assets/font/fontawesome-webfont.woff?v=3.0.1') format('woff'),
+          url('http://fortawesome.github.io/Font-Awesome/assets/font/fontawesome-webfont.ttf?v=3.0.1') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+      }
+      body {
+        font-family: 'Helvetica';
+      }
+      button {
+        font-size: 20px;
+        padding: 2px 16px;
+        margin-right: 20px;
+        
+      }
+      .content {
+        width: 800px;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+    <h1>ThumbsUp.js</h1>
+    <button>Click me</button>
+
+    <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue vestibulum felis quis placerat. Proin sapien leo, fermentum vel congue a, rhoncus ac diam. Fusce vel tortor elit, vitae suscipit mauris. Integer euismod blandit mauris sit amet dignissim. Cras augue sem, ornare eget pharetra eget, volutpat vitae nibh. Morbi vestibulum, augue in iaculis feugiat, eros est tempor est, nec aliquet metus nisi at magna. Nunc quis justo nunc. Praesent sed purus quis massa placerat tincidunt. Cras aliquet augue ac eros sodales mollis.
+    </p>
+    <p>
+    Vivamus eget nunc risus, a ullamcorper orci. Pellentesque tristique mattis tincidunt. Ut semper tincidunt velit. Sed sit amet leo ipsum, vitae eleifend purus. Morbi ut condimentum felis. Nulla facilisi. Cras volutpat arcu ac elit molestie lacinia. Etiam fermentum tellus vel lacus congue quis tempus ante ornare. Nam consectetur mi nec mi bibendum condimentum. Maecenas gravida elit sit amet dolor luctus viverra. Aliquam sit amet dui eget nibh gravida placerat. Proin eget orci velit. Sed faucibus, elit vitae porttitor pretium, est justo porta erat, vitae viverra metus lacus ac nibh. Donec non odio in ante consectetur scelerisque sed eu lorem.
+    </p>
+    <p>
+    Curabitur tortor urna, varius aliquam lacinia eu, bibendum ultrices enim. Phasellus vitae accumsan purus. Phasellus purus leo, sodales ac feugiat tristique, tincidunt at dolor. Suspendisse tristique, ligula vitae tristique condimentum, tortor justo varius est, eget tristique nulla mi in sapien. Sed elementum ante non urna iaculis laoreet. Suspendisse eu luctus dui. Sed dictum libero ut dui auctor condimentum. Pellentesque eleifend diam at mi faucibus eget consectetur leo porta. Proin tempor, erat ut commodo aliquam, purus libero vehicula odio, sit amet accumsan urna sapien vel purus. Phasellus sed velit vitae arcu lacinia sodales.
+    </p>
+    <p>
+    Quisque vel dolor eros. Sed vulputate, arcu quis consequat consectetur, lorem orci ultrices nisi, at blandit ante nibh placerat sem. In hac habitasse platea dictumst. Donec sodales, magna nec imperdiet facilisis, libero augue molestie quam, lobortis ultricies enim est nec nibh. Nunc in volutpat dui. Duis aliquet malesuada risus, nec interdum mauris bibendum sed. In iaculis, urna id eleifend sagittis, nibh augue gravida lacus, ut sollicitudin mi quam quis mauris.
+    </p>
+    <p>
+    Vestibulum volutpat dapibus massa, non congue justo laoreet non. Curabitur turpis magna, sagittis eu sagittis a, rutrum et arcu. In mollis pellentesque semper. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas dui dui, placerat ac fermentum a, varius a tortor. Integer convallis, nulla eu auctor lobortis, odio metus consequat tortor, at suscipit mauris tellus nec elit. Vestibulum nisi magna, venenatis non lacinia at, facilisis eget lorem.
+    </p>
+    
+    <button>Click me</button>
+    <button>Click me</button>
+    <button>Click me</button>
+    
+    <button>Click me</button>
+    <button>Click me</button>
+    <button>Click me</button>
+      
+    <button>Click me</button>
+    <button>Click me</button>
+    <button>Click me</button>
+    </div>
+      <script>
+        $('button').on('click' , function (evt) {
+          ThumbsUp(evt.target);
+        })
+      </script>
+    </body>
+</html>
