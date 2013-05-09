@@ -5,6 +5,8 @@ var ThumbsUp = function (element , o) {
     $el = $('<div class="thumbsup">' + (o.character || '&#xf087;') + '</div>'),
     $anchor = $(element),
     offset = $anchor.offset(),
+    anchorWidth = $anchor.width(),
+    anchorHeight = $anchor.height(),
     windowHeight = $(window).height(),
     windowWidth = $(window).width(),
     newFontSize = Math.floor(Math.min(windowHeight , windowWidth) * 1.2),
@@ -15,11 +17,12 @@ var ThumbsUp = function (element , o) {
     newLeft = (windowWidth/2) - ((newFontSize)/2);
 
     $body.append($el);
+
     $el.css({
       fontFamily: 'FontAwesome',
       position: 'fixed',
-      top: offset.top - $body.scrollTop(),
-      left: offset.left - $body.scrollLeft(),
+      top: (offset.top + Math.floor(anchorHeight/2)) - $body.scrollTop(),
+      left: (offset.left + Math.floor(anchorWidth/2)) - $body.scrollLeft(),
       fontSize: size,
       opacity: 1,
       width: newFontSize,
